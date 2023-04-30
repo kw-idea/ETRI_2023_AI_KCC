@@ -5,10 +5,13 @@
 > 인간은 언어적, 반언어적 요소를 통합적으로 파악하며, 감정을 인식합니다. 본 연구에서는 발화자의 텍스트와음성 및 생체 신호 데이터를 종합적으로 활용하여 중립, 기쁨, 슬픔, 놀람, 공포, 분노, 혐오 총 7가지 감정을 분류하는 멀티 모달리티 모델을 제안하였습니다. 그 결과, 단일 모달리티 모델보다 더 우수한 성능을 얻을 수 있었습니다. 따라서 감정 인식에 있어서 여러 모달리티를 종합적으로 활용하는 것이 효과적인 것을 알 수 있었습니다.
 
 ## DATA
-> 한국 공용기관생명윤리위원회의 IRB 승인 절차에 따라 수집한 ETRI 한국어 감정 데이터셋 사용
-> KEMDy19(KEMDy19; Korean Emotional Multi-modal Dataset in 2019)
-> KEMDy20(KEMDy20; Korean Emotional Multi-modal Dataset in 2020)
-> 각각 발화 오디오 파일, 텍스트 데이터, 생체 신호 데이터, 그리고 7가지 감정 레이블(중립, 기쁨, 슬픔, 놀람, 공포, 분노, 혐오),각성도 및 긍부정도로 구성되어 있습니다.
+> - 한국 공용기관생명윤리위원회의 IRB 승인 절차에 따라 수집한 ETRI 한국어 감정 데이터셋 사용
+>
+> - KEMDy19(KEMDy19; Korean Emotional Multi-modal Dataset in 2019)
+>
+> - KEMDy20(KEMDy20; Korean Emotional Multi-modal Dataset in 2020)
+>
+> - 각각 발화 오디오 파일, 텍스트 데이터, 생체 신호 데이터, 그리고 7가지 감정 레이블(중립, 기쁨, 슬픔, 놀람, 공포, 분노, 혐오),각성도 및 긍부정도로 구성되어 있습니다.
 
 ## 코드 내용
 ### Feature Extraction 
@@ -45,6 +48,7 @@
 
 ## Performance
 > K-fold는 subset 1,2,3,4,5 데이터로 따로 저장
+>
 > 각각 subset에 대해 test를 진행하고 합산하여 평균값을 냈습니다.
 >
 > |Model|Setting|F-1 score|
@@ -56,4 +60,5 @@
 > |Optuna+weight sum|Late fusion (Text+Audio)|0.778|
 > 
 > Early fusion(Text+Audio)과 Late fusion 결과 confusion matrix
+>
  ![image](https://user-images.githubusercontent.com/64082236/235347092-57bd546c-9ad0-46a2-bbbb-49d1c37b3a40.png)
