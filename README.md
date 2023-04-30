@@ -61,4 +61,4 @@
 > 
 > Early fusion(Text+Audio)과 Late fusion 결과 confusion matrix
 >
- ![image](https://user-images.githubusercontent.com/64082236/235347092-57bd546c-9ad0-46a2-bbbb-49d1c37b3a40.png)
+![image (1)](https://user-images.githubusercontent.com/64082236/235356584-d3b44c31-c29e-4b09-90eb-b5c61c0a269e.png)
