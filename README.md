@@ -51,13 +51,13 @@
 >
 > 각각 subset에 대해 test를 진행하고 합산하여 평균값을 냈습니다.
 >
-> |Model|Setting|F-1 score|
-> |:----:|:----:|:----:|
-> |KcBert|Text|0.736|
-> |Wav2vec|Audio|0.731|
-> |MLP|Early fusion (Text+Audio)|0.752|
-> |MLP|Early fusion (Text+Audio+Signal)|0.747|
-> |Optuna+weight sum|Late fusion (Text+Audio)|0.778|
+|Model|Setting|F-1 score|
+|:----:|:----:|:----:|
+|KcBert|Text|0.736|
+|Wav2vec|Audio|0.731|
+|MLP|Early fusion (Text+Audio)|0.752|
+|MLP|Early fusion (Text+Audio+Signal)|0.747|
+|Optuna+weight sum|Late fusion (Text+Audio)|0.778|
 > 
 > Early fusion(Text+Audio)과 Late fusion 결과 confusion matrix
 >
